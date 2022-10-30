@@ -1,0 +1,37 @@
+
+legend   
+{
+    font-style: oblique; 
+    color: orangered;
+    font-weight: 800;
+    font-size:langer;
+}
+fieldset
+{
+    border-color: orange;
+    background-color:whitesmoke ;
+}
+h1
+{
+   color:orangered;
+   position:relative;
+   -webkit-transitions: 1s ease-in-out;
+   -moz-transition: 1s ease-in-out;
+   transition: 1s ease-in-out;
+   
+}
+hr 
+{
+    border-top: 2px dotted orange; 
+    color:orangered;
+}
+.top
+{
+    background-color: orange;
+    color:whitesmoke;
+}
+strong
+{
+   color:olive;
+   font-size: large;
+}
