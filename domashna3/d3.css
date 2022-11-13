@@ -1,0 +1,46 @@
+.stop {
+    font-size: 50%;
+}
+
+.slika {
+    width: 30px;
+    height: 30px;
+}
+
+.button {
+display: inline-block;
+padding: 10px 15px;
+font-size: 24px;
+cursor: pointer;
+text-align: center;
+text-decoration: none;
+outline: none;
+color:whitesmoke;
+background-color:orange;
+border: none;
+border-radius: 15px;
+box-shadow: 0 9px wheat;
+position: relative;
+}
+.button:hover {
+  background-color:orangered
+}
+.button:active {
+background-color:orangered;
+box-shadow: 0 5px gray;
+transform: translateY(4px);
+}
+.stil{
+font-style:normal;
+text-align: center;
+color: orangered ;
+
+}
+.tekst{
+text-align: center;
+font-size:large;
+color:orangered
+}
+.pozadina{
+background-color: whitesmoke;
+}
