@@ -1,0 +1,353 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.navbar {
+    background: #131313;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar_container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+#navbar_logo {
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #bc2152 0%, #ba4c72 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+}
+.navbar_menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+
+.navbar_item{
+    height: 80px;
+}
+
+.navbar_links{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+}
+
+.navbar_links:hover{
+    color: #fc547e;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 960px) {
+    .navbar_container{
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        max-width: 1300px;
+        padding: 0;
+    }
+    
+    .navbar_menu{
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top: -1000px;
+        opacity: 0;
+        transition: all 0.5s ease;
+        height: 50vh;
+        z-index: -1;
+        background: #131313;
+    }
+
+    .navbar_menu.active{
+        background: #131313;
+        top: 100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 99;
+        height: 80vh;
+        font-size: 1.6rem;
+    }
+
+    #navbar_logo{
+        padding-left: 25px;
+    }
+
+    .navbar_toggle .bar{
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background: #fff;
+        
+    }
+
+    .navbar_item{
+        width: 100%;
+    }
+    .navbar_links{
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+    }
+    #mobile-menu{
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(5%, 20%);
+    }
+
+    .navbar_toggle .bar{
+        display: block;
+        cursor: pointer;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(2){
+        opacity: 0;
+    }
+    #mobile-menu.is-active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    #mobile-menu.is-active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+.main_container{
+    display:flex;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+    margin: auto;
+    height:max-content;
+    background-color:#fff;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+    font-style: italic;
+
+}
+
+#main__img
+{
+   position: absolute;
+   height: 700px;
+   top: 50%;
+   bottom: 50%;
+   left:50%;
+   right: 50%;
+   transform: translate(-50%, -50%);
+   
+   
+
+}
+.top{
+    position: absolute;
+    top: 12%;
+    left: 40%;
+    font-size: 2rem;
+
+}
+img{
+    position: absolute;
+    top: 10%;
+    left: 45%;
+    height: 150px;
+    max-width: 80%;
+
+}
+legend{
+    font-style: oblique;
+    color:#bc2152;
+    font-weight: 800;
+    font-size: larger;
+}
+fieldset{
+    border-color: #131313;
+    border-width: 5px;
+    background-color: whitesmoke;
+    padding:50px 50px 50px 50px;
+    width: 1000px;
+    float: center;
+    align-items: center ;
+    right: 50%;
+    
+    font-size: large;
+}
+.card{
+    border: #bc2152;
+    width: 18rem;
+}
+.anketa{
+
+    width: 1000px;
+    margin: 0rem 10rem;
+    
+}
+.lp{
+  width: 1000px;
+  margin: 0rem 18rem;
+
+}
+.oo{
+    width: 1000px;
+    margin: 0rem 18rem;
+    bottom: 5rem;
+}
+.mila{
+    height: 40%;
+    top:15%;
+    left: 43%;
+}
+.muzika{
+    width: 500px;
+    margin: 0rem 30rem;
+}
+.film{
+    width: 500px;
+    margin: 0rem 30rem;
+}
+.restorani{
+    width: 500px;
+    margin: 0rem 30rem;
+}
+.cardb1{
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background: rgb(165, 84, 104);
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.card-img{
+    height: 45%;
+    margin: 7rem -5.5rem;
+}
+.cardb2{
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background: rgb(165, 84, 104);
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;height: 365px;
+    
+}
+.card-img1{
+    height: 45%;
+    margin: 7rem -6.5rem;
+}
+.cardb3{
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background: rgb(165, 84, 104);
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;height: 365px;
+}
+.card-img2{
+    height: 45%;
+    margin: 7rem -7rem;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 150px;
+}
+
+.card{
+    height: 1rem;
+    width: 333px;
+    padding: 20px 35px;
+    background:#ee537f;
+    border-radius: 20px;
+    margin: 50px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+
+}
+
+
+.gallery{
+width: 50%;
+height: 200%;
+padding: 0 auto;
+}
+
+.gallery1{
+width: 50%;
+height: 200%;
+padding: 0 auto;
+}
+
+.gallery2{
+    width: 50%;
+    height: 200%;
+    padding: 0 auto;
+}
+
+.gallery3{
+    width: 50%;
+    height: 200%;
+    padding: 0 auto;
+}
+
+.gallery4{
+    width: 50%;
+    height: 200%;
+    padding: 0 auto;
+}

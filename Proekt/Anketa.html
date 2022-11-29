@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prva WEB strana</title>
+    <link rel="stylesheet" href="Proekt.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar_container">
+            <a href="Proekt.html" id="navbar_logo">Мила Светозаревиќ</a>
+            <div class="navbar_toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar_menu">
+                <li class="navbar_item">
+                    <a href="Doma.html" class="navbar_links">Дома</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="OmileniNeshta.html" class="navbar_links">Омилени Нешта</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="Galerija.html" class="navbar_links">Галерија</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="Blog.html" class="navbar_links">Блог</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="Anketa.html" class="navbar_links">Анкета</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="Kontakt.html" class="navbar_links">Контакт</a>
+                </li>
+                
+            </ul>
+            </div>
+             </nav>
+             <div class="main">
+                <div class="main_container">
+                <div class="main_content">
+                  <div class="top";>
+                  <strong>Анкета за корисници</strong>
+                  </div>
+                  <br/>
+                  <br/>
+                  <br>
+                    <fieldset class="anketa">
+                  <legend>Прашалник</legend>
+                  <div>
+                    <strong>Дали Ви се допаѓа сајтот? </strong>
+                    <br/>
+                    <input  type="checkbox" name="Ваша импресија за сајтот" value="ДА" id="da"/>ДА
+                    <br/>
+                    <input  type="checkbox" name="Ваша импресија за сајтот" value="НЕ" id="ne"/>НЕ
+                    <br/>
+                    <br/>
+                    
+                    <strong>Кој дел од менито Ви е омилен?</strong>
+                    <br/>
+                    <select name="menu">
+                        <optgroup label="Омилено Мени">
+                            <option>Дома</option>
+                            <option>Омилени нешта</option>
+                            <option>Галерија</option>
+                            <option>Блог</option>
+                            <option>Контакт</option>
+                        </optgroup>
+                    </select>
+                     <br/>
+                     <br/>
+                     <strong>Која е Ваша омилена песна од Адел?</strong>
+                     <br/>
+                     <input type="text" name="Омилена песна" id="pesna"/>
+                     <br/>
+                     <br/>
+                     <strong>Кој е Ваш омилен Марвел филм?</strong>
+                     <br/>
+                     <input type="text" name="Omilen film" id="film"/>
+                  </div>
+                    <br/>
+                    <br/>
+                    <strong>Споделете го Вашето мислење на темата "Колку е штетно кафето"</strong>
+                    <br/>
+                    <textarea>Ваш коментар</textarea>
+                    <br/>
+                    <br/>
+                    <strong>Ваша оцена за сајтот</strong>
+                    <br/>
+                    0<input type="range" name="Ваша оцена" id="ocena"/>10
+                    <br/>
+                    <br/>
+                    <br/>
+                    <input type="submit" name="Submit" id="btn"/>
+                    </fieldset>
+    <script src="Proekt.js"></script>
+</body>
+</html>
